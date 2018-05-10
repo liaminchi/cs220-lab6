@@ -1,7 +1,9 @@
 language: C
 
 hello:build:
-  include:
-    - stage: build
-      script: cd hello
-      script: make clean all
+  stage: build
+  script:
+    - make -C /hello clean all
+  only:
+    - master
+
