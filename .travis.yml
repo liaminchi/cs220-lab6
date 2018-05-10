@@ -1,3 +1,5 @@
+language: C
+
 hello:build:
   language: C
   install: true
