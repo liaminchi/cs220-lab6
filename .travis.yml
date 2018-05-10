@@ -2,8 +2,8 @@ language: C
 compiler: gcc
 
 hello:
-  stage: build
-  script:
-    - cd hello
-    - make clean all
-
+  include:
+    - stage: build
+      script:
+        - cd hello
+        - make clean all
