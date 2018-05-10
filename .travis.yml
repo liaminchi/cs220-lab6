@@ -4,4 +4,6 @@ compiler: gcc
 hello:build:
   stage: build
   script:
-    - make -C /hello clean all
+    - cd hello
+    - make clean all
+
