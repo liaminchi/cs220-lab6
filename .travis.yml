@@ -1,3 +1,5 @@
-language: C
-
-install: true
+hello:build:
+  language: C
+  install: true
+  script:
+    - make -C hello clean all
