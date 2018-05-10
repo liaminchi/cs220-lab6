@@ -1,6 +1,7 @@
 language: C
 compiler: gcc
 
-script:
-  - cd hello
-  - make clean all
+hello:build:
+  stage: build
+  script:
+    - make -C /hello clean all
