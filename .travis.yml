@@ -1,10 +1,6 @@
 language: C
+compiler: gcc
 
-hello:build:
-  stage: build
-  install: /usr/bin/env sh
-  build:
-    - make -C /hello clean all
-  only:
-    - master
-
+script:
+  - cd hello
+  - make clean all
