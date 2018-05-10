@@ -3,7 +3,7 @@ language: C
 hello:build:
   stage: build
   install: /usr/bin/env sh
-  script:
+  build:
     - make -C /hello clean all
   only:
     - master
