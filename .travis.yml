@@ -2,6 +2,5 @@ language: C
 
 hello:build:
   language: C
-  install: true
   script:
     - make -C hello clean all
