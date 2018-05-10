@@ -3,4 +3,5 @@ language: C
 hello:build:
   include:
     - stage: build
-      script: make -C /hello clean all
+      script: cd hello
+      script: make clean all
